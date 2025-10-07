@@ -12,17 +12,16 @@ const mulish = Mulish({
 
 // PERSONALIZAR: Actualizar metadata con tu información
 export const metadata: Metadata = {
-  title: "Tu Nombre - Desarrollador Full Stack",
+  title: "Eduardo Valenzuela - Desarrollador Full Stack",
   description:
-    "Portfolio personal de [Tu Nombre]. Desarrollador Full Stack especializado en React, Next.js y diseño web moderno.",
+    "Portfolio personal de Eduardo Valenzuela. Desarrollador Full Stack especializado en React, Next.js y diseño web moderno.",
   keywords: ["desarrollador", "full stack", "react", "next.js", "portfolio", "web developer"],
-  authors: [{ name: "Tu Nombre" }],
+  authors: [{ name: "Eduardo Valenzuela" }],
   openGraph: {
-    title: "Tu Nombre - Desarrollador Full Stack",
+    title: "Eduardo Valenzuela - Desarrollador Full Stack",
     description: "Portfolio personal y proyectos destacados",
     type: "website",
-  },
-    generator: 'v0.app'
+  }
 }
 
 export default function RootLayout({

@@ -41,7 +41,7 @@ export function Header() {
             onClick={() => scrollToSection("hero")}
             className="text-lg sm:text-xl font-bold text-foreground hover:text-primary transition-colors"
           >
-            eduardo.dev
+            levittwl.dev
           </button>
 
           {/* Navigation Links */}
