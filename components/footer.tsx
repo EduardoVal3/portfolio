@@ -12,7 +12,7 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <p className="text-sm text-muted-foreground text-center sm:text-left">
-            © {currentYear} Tu Nombre. Hecho con <Heart className="inline w-4 h-4 text-primary fill-primary" /> usando
+            © {currentYear} Eduardo Valenzuela. Hecho con <Heart className="inline w-4 h-4 text-primary fill-primary" /> usando
             Next.js
           </p>
 
@@ -28,7 +28,7 @@ export function Footer() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/tu-perfil"
+              href="https://linkedin.com/in/EduardoVal3"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
