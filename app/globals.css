@@ -134,6 +134,13 @@ body {
   overflow-x: hidden; /* Prevenir scroll horizontal */
 }
 
+/* Espacio para el navbar inferior solo en móvil */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 4rem; /* Reducido para evitar conflictos con footer */
+  }
+}
+
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;

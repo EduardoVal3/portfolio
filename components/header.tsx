@@ -41,10 +41,10 @@ export function Header() {
             onClick={() => scrollToSection("hero")}
             className="text-lg sm:text-xl font-bold text-foreground hover:text-primary transition-colors"
           >
-            levittwl.dev
+            Eduardo Valenzuela
           </button>
 
-          {/* Navigation Links */}
+          {/* Navigation Links - Solo Desktop */}
           <div className="hidden md:flex items-center gap-6 lg:gap-8">
             <button
               onClick={() => scrollToSection("about")}
@@ -71,7 +71,7 @@ export function Header() {
               Contacto
             </button>
 
-            {/* Theme Toggle */}
+            {/* Theme Toggle Desktop */}
             <Button
               variant="ghost"
               size="icon"
@@ -82,9 +82,13 @@ export function Header() {
             </Button>
           </div>
 
-          {/* Mobile Menu */}
-          <div className="flex md:hidden items-center gap-2">
-            <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+          {/* Theme Toggle Mobile - Solo theme toggle */}
+          <div className="flex md:hidden items-center">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
               {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
           </div>

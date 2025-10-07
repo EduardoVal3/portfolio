@@ -4,6 +4,7 @@ import { Mulish } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Particles from "@/components/Particles"
+import { BottomNavbar } from "@/components/bottom-navbar"
 
 const mulish = Mulish({
   subsets: ["latin"],
@@ -38,7 +39,7 @@ export default function RootLayout({
           <div className="fixed inset-0 -z-10">
             <Particles
               particleColors={['#07c6ff', '#c137ff']}
-              particleCount={700}
+              particleCount={500}
               particleSpread={10}
               speed={0.1}
               particleBaseSize={100}
@@ -48,6 +49,7 @@ export default function RootLayout({
             />
           </div>
           {children}
+          <BottomNavbar />
         </ThemeProvider>
       </body>
     </html>
