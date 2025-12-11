@@ -12,7 +12,6 @@ const mulish = Mulish({
   display: "swap",
 })
 
-// PERSONALIZAR: Actualizar metadata con tu información
 export const metadata: Metadata = {
   title: "Eduardo Valenzuela - Desarrollador Full Stack",
   description:

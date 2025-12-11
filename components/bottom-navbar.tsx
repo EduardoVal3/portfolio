@@ -85,9 +85,8 @@ export function BottomNavbar() {
               <motion.button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="relative p-3 rounded-lg transition-colors duration-200 flex flex-col items-center"
+                className="relative p-2 rounded-lg transition-colors duration-200 flex flex-col items-center gap-1"
                 whileTap={{ scale: 0.95 }}
-                whileHover={{ scale: 1.05 }}
               >
                 <motion.div
                   animate={{ 
@@ -100,14 +99,24 @@ export function BottomNavbar() {
                   <Icon className="w-5 h-5" />
                 </motion.div>
 
-                {/* Active indicator dot */}
+                {/* Label */}
+                <motion.span
+                  animate={{ 
+                    color: isActive ? "hsl(var(--primary))" : "hsl(var(--muted-foreground))"
+                  }}
+                  className="text-[10px] font-medium"
+                >
+                  {item.label}
+                </motion.span>
+
+                {/* Active indicator line */}
                 <AnimatePresence>
                   {isActive && (
                     <motion.div
-                      initial={{ opacity: 0, scale: 0 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0 }}
-                      className="mt-1 w-1 h-1 bg-primary rounded-full"
+                      initial={{ opacity: 0, scaleX: 0 }}
+                      animate={{ opacity: 1, scaleX: 1 }}
+                      exit={{ opacity: 0, scaleX: 0 }}
+                      className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-primary rounded-full"
                     />
                   )}
                 </AnimatePresence>
